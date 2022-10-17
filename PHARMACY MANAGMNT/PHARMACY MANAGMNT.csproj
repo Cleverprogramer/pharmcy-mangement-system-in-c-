@@ -1,0 +1,402 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3E648376-127A-4BF3-AA5B-0F5781199D25}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PHARMACY_MANAGMNT</RootNamespace>
+    <AssemblyName>PHARMACY MANAGMNT</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AxShockwaveFlashObjects, Version=1.0.0.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="Bunifu_UI_v1.5.3">
+      <HintPath>..\..\..\..\..\Desktop\New folder\Bunifu_UI_v1.5.3.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BACKUP AND RESTORE_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BACKUP AND RESTORE_Form.Designer.cs">
+      <DependentUpon>BACKUP AND RESTORE_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CrystalReport1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReport1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CrystalReport2.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReport2.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="EMPALOYEE_RAGISTRATION_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EMPALOYEE_RAGISTRATION_Form.Designer.cs">
+      <DependentUpon>EMPALOYEE_RAGISTRATION_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="employeeReport.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>employeeReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="EMPLOYEE_REPORT_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EMPLOYEE_REPORT_Form.Designer.cs">
+      <DependentUpon>EMPLOYEE_REPORT_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="laboratoryReport.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>laboratoryReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="LABORATORY_REGISTRATION_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LABORATORY_REGISTRATION_Form.Designer.cs">
+      <DependentUpon>LABORATORY_REGISTRATION_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LABORATORY_REPORT_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LABORATORY_REPORT_Form.Designer.cs">
+      <DependentUpon>LABORATORY_REPORT_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LOGING_FORM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LOGING_FORM.Designer.cs">
+      <DependentUpon>LOGING_FORM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MAIN_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MAIN_Form.Designer.cs">
+      <DependentUpon>MAIN_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="medicineReport.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>medicineReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MEDICINE_RAGISTTATION_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MEDICINE_RAGISTTATION_Form.Designer.cs">
+      <DependentUpon>MEDICINE_RAGISTTATION_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MEDICINE_REPORT_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MEDICINE_REPORT_Form.Designer.cs">
+      <DependentUpon>MEDICINE_REPORT_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NEW PATIENT_REGISTRATION_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NEW PATIENT_REGISTRATION_Form.Designer.cs">
+      <DependentUpon>NEW PATIENT_REGISTRATION_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="patientRegistrationReport.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>patientRegistrationReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="PATIENT_REPORTS_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PATIENT_REPORTS_Form.Designer.cs">
+      <DependentUpon>PATIENT_REPORTS_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SALES_RAGISTRATION_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SALES_RAGISTRATION_Form.Designer.cs">
+      <DependentUpon>SALES_RAGISTRATION_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SALES_REPORTY_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SALES_REPORTY_Form.Designer.cs">
+      <DependentUpon>SALES_REPORTY_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="spash_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="spash_Form.Designer.cs">
+      <DependentUpon>spash_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="userReport.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>userReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="USERS_REPORT_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="USERS_REPORT_Form.Designer.cs">
+      <DependentUpon>USERS_REPORT_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="USER_RAGISTRATION_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="USER_RAGISTRATION_Form.Designer.cs">
+      <DependentUpon>USER_RAGISTRATION_Form.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="BACKUP AND RESTORE_Form.resx">
+      <DependentUpon>BACKUP AND RESTORE_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrystalReport1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReport1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrystalReport2.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReport2.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EMPALOYEE_RAGISTRATION_Form.resx">
+      <DependentUpon>EMPALOYEE_RAGISTRATION_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="employeeReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>employeeReport.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EMPLOYEE_REPORT_Form.resx">
+      <DependentUpon>EMPLOYEE_REPORT_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="laboratoryReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>laboratoryReport.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LABORATORY_REGISTRATION_Form.resx">
+      <DependentUpon>LABORATORY_REGISTRATION_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LABORATORY_REPORT_Form.resx">
+      <DependentUpon>LABORATORY_REPORT_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LOGING_FORM.resx">
+      <DependentUpon>LOGING_FORM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MAIN_Form.resx">
+      <DependentUpon>MAIN_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="medicineReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>medicineReport.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MEDICINE_RAGISTTATION_Form.resx">
+      <DependentUpon>MEDICINE_RAGISTTATION_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MEDICINE_REPORT_Form.resx">
+      <DependentUpon>MEDICINE_REPORT_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NEW PATIENT_REGISTRATION_Form.resx">
+      <DependentUpon>NEW PATIENT_REGISTRATION_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="patientRegistrationReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>patientRegistrationReport.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PATIENT_REPORTS_Form.resx">
+      <DependentUpon>PATIENT_REPORTS_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="SALES_RAGISTRATION_Form.resx">
+      <DependentUpon>SALES_RAGISTRATION_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SALES_REPORTY_Form.resx">
+      <DependentUpon>SALES_REPORTY_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="spash_Form.resx">
+      <DependentUpon>spash_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="userReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>userReport.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="USERS_REPORT_Form.resx">
+      <DependentUpon>USERS_REPORT_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="USER_RAGISTRATION_Form.resx">
+      <DependentUpon>USER_RAGISTRATION_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %283%29.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\People-Pharmacist-Female-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Lgp85-Blue-Crystal-My-Documents.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Iconshow-Medical-Patients.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Gianni-Polito-Colobrush-Pill-2.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lab-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Jozef89-Services-Flat-Lab.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Custom-Icon-Design-Flatastic-11-Cash.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hopstarter-Sleek-Xp-Basic-Preppy.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icojam-Blue-Bits-Users.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Custom-Icon-Design-Pretty-Office-6-Custom-reports.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Custom-Icon-Design-Pretty-Office-6-Backup-restore1 - Copy.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Oxygen-Icons.org-Oxygen-Actions-system-shutdown.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IMG-20220623-WA0004.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\forbidden.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Patients-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Custom-Icon-Design-Pretty-Office-7-Save.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Oxygen-Icons.org-Oxygen-Actions-edit-redo.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hopstarter-Sleek-Xp-Basic-Close1.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Gianni-Polito-Colobrush-Pill-21.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lab-icon1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\money-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hopstarter-Sleek-Xp-Basic-Preppy1.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %284%29.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Papirus-Team-Papirus-Apps-Preferences-system-login.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hopstarter-Sleek-Xp-Basic-Close11.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
